@@ -1,8 +1,12 @@
 ﻿using ConsoleApp10;
 using ConsoleApp10.Models;
 
+BaseEntity study = new Study();
 
-ManageAccountForDeactive account = new ();
+Console.WriteLine(study.);
 
-account.DisplayAccount();
+
+
+
+
 
