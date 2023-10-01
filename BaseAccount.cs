@@ -23,13 +23,13 @@ namespace ConsoleApp10
         {
             using ErpContext erpContext = new ErpContext(); 
 
-            var list = erpContext.Accounts.ToList();    
+            var list = erpContext.Accounts.ToList().Select(y=>y.AccountName);    
 
 
             foreach(var t in list)
             {
 
-                Console.WriteLine(t.AccountName);
+                Console.WriteLine(t);
             }
         }
     }

@@ -71,6 +71,9 @@ public partial class ErpContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("Batch");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+            entity.Property(e => e.Timing)
+                .HasMaxLength(50)
+                .IsUnicode(false);
         });
 
         modelBuilder.Entity<Country>(entity =>

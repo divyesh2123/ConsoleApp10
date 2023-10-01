@@ -12,4 +12,6 @@ public partial class Batch
     public bool IsActive { get; set; }
 
     public DateTime? CreatedDate { get; set; }
+
+    public string? Timing { get; set; }
 }

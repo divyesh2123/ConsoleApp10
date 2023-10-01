@@ -1,12 +1,9 @@
 ﻿using ConsoleApp10;
 using ConsoleApp10.Models;
+using DatabaseOperation;
 
-BaseEntity study = new Study();
+MyEmployeeAddress myEmployee = new MyEmployeeAddress();
 
-Console.WriteLine(study.);
+IRB iRB = new IRB();
 
-
-
-
-
-
+iRB.Display();
